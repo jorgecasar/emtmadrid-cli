@@ -2,7 +2,7 @@
   "name": "emtmadrid",
   "version": "0.1.0",
   "description": "A CLI to use EMT Madrid Open Data Services",
-  "private": true,
+  "private": false,
   "bin": {
     "emtmadrid": "./bin/emtmadrid"
   },
