@@ -1,0 +1,32 @@
+{
+  "name": "emtmadrid",
+  "version": "0.1.0",
+  "description": "A CLI to use EMT Madrid Open Data Services",
+  "private": true,
+  "bin": {
+    "emtmadrid": "./bin/emtmadrid"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "author": {
+    "name": "Jorge del Casar",
+    "email": "jorge.casar@gmail.com",
+    "url": "https://github.com/jorgecasar"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorgecasar/emtmadrid-cli"
+  },
+  "license": "MIT",
+  "bugs": "https://github.com/jorgecasar/emtmadrid-cli/issues",
+  "dependencies": {
+    "autocmdr": "~0.0.7",
+    "commander": "~2.0.0",
+    "inquirer": "^0.12.0",
+    "request": "^2.69.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
+}
