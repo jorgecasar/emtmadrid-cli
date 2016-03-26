@@ -79,7 +79,7 @@ module.exports = {
     questions.line,
     questions.lang
   ],
-  geoGetInfoLineExtended: [
+  geoGetInfoLineExtend: [
     questions.date,
     questions.line,
     questions.lang
