@@ -58,8 +58,8 @@ module.exports = {
     questions.lang
   ],
   geoGetPointsOfInterest: [
-    questions.coordinateX,
-    questions.coordinateY,
+    questions.latitude,
+    questions.longitude,
     questions.typesPOI,
     questions.radius,
     questions.moreInfo,
