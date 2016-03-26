@@ -5,6 +5,7 @@ var uuidRegExp = /^[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}$
 var numberRegExp = /^\d+$/gi;
 var numbersByPipeRegexp = /^\d+(?:\|\d+)*$/gi;
 var textByPipe = /^\w+(?:\|\w+)*$/gi;
+var floatRegExp = /^[-+]?[0-9]*\.?[0-9]+$/gi;
 
 var formatDate = function(date, days) {
   if (days) {
@@ -135,7 +136,7 @@ module.exports = {
     name: 'longitude',
     message: 'Longitude with decimal separator ".":',
     validate: function(input) {
-      return !isNaN(input) ?
+      return input && input.match(floatRegExp) ?
         true :
         'Please provide a valid decimal number using point "." as decimal separator.';
     }
@@ -144,7 +145,7 @@ module.exports = {
     name: 'latitude',
     message: 'Latitude with decimal separator ".":',
     validate: function(input) {
-      return !isNaN(input) ?
+      return input && input.match(floatRegExp) ?
         true :
         'Please provide a valid decimal number using point "." as decimal separator.';
     }
