@@ -33,8 +33,7 @@ module.exports = {
   ],
 
   geoGetStreet: [
-    questions.description1,
-    questions.description2,
+    questions.description,
     questions.streetNumber,
     questions.radius,
     questions.lang

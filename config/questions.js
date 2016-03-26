@@ -69,16 +69,12 @@ module.exports = {
     }]
   },
 
-  description1: {
-    name: 'description1',
+  description: {
+    name: 'description',
     message: 'Nombre de la calle/primera calle de esquina/ punto de interés:',
     validate: function(input) {
       return input ? true : 'Please provide the name of a street.';
     }
-  },
-  description2: {
-    name: 'description2',
-    message: 'Nombre de la calle/primera calle de esquina/ punto de interés:',
   },
   streetNumber: {
     name: 'streetNumber',
