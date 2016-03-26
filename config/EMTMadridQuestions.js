@@ -69,8 +69,8 @@ module.exports = {
     questions.lang
   ],
   geoGetStreetFromXY: [
-    questions.coordinateX,
-    questions.coordinateY,
+    questions.latitude,
+    questions.longitude,
     questions.radius,
     questions.lang
   ],
