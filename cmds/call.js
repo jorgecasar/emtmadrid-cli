@@ -5,10 +5,10 @@
 
 var util = require('util');
 var inquirer = require('inquirer');
+var EMTMadrid = require('emtmadrid-lib');
 
 var questions = require('../config/questions');
 var EMTMadridQuestions = require('../config/EMTMadridQuestions');
-var EMTMadrid = require('../lib/EMTMadrid');
 
 
 module.exports = function(program) {
